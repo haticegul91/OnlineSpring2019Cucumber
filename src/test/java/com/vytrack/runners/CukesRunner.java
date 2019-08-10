@@ -7,10 +7,10 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 
-
-        tags = {"@storemanager and @negative"},
+          tags ={"@storemanager or @negative"},
+      //  tags = {"@negative"},
         features = {"src/test/resources/features" //to specify where are the features
-        },
+},
         //feature contains scenarios
         //every scenario is like a test
         //where is the implementation for features
